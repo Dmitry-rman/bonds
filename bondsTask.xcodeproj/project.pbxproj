@@ -14,6 +14,25 @@
 		0AA1DF0B21D47F5E0081C88A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA1DF0921D47F5E0081C88A /* LaunchScreen.storyboard */; };
 		0AA1DF1621D47F5E0081C88A /* bondsTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF1521D47F5E0081C88A /* bondsTaskTests.swift */; };
 		0AA1DF2121D47F5E0081C88A /* bondsTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF2021D47F5E0081C88A /* bondsTaskUITests.swift */; };
+		0AA1DF3121D486B30081C88A /* BTBoundGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3021D486B30081C88A /* BTBoundGraphView.swift */; };
+		0AA1DF3221D486B30081C88A /* BTBoundGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3021D486B30081C88A /* BTBoundGraphView.swift */; };
+		0AA1DF3321D486B30081C88A /* BTBoundGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3021D486B30081C88A /* BTBoundGraphView.swift */; };
+		0AA1DF3521D48A670081C88A /* BTBoundValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3421D48A670081C88A /* BTBoundValue.swift */; };
+		0AA1DF3621D48A670081C88A /* BTBoundValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3421D48A670081C88A /* BTBoundValue.swift */; };
+		0AA1DF3721D48A670081C88A /* BTBoundValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3421D48A670081C88A /* BTBoundValue.swift */; };
+		0AA1DF3921D496A30081C88A /* BTBoundDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3821D496A30081C88A /* BTBoundDataProviderProtocol.swift */; };
+		0AA1DF3D21D498350081C88A /* BTBoundLocalDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3C21D498350081C88A /* BTBoundLocalDataProvider.swift */; };
+		0AA1DF3F21D49C6A0081C88A /* BTBoundHTTPDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3E21D49C6A0081C88A /* BTBoundHTTPDataProvider.swift */; };
+		0AA1DF4121D49C860081C88A /* BTBoundWebSocketDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF4021D49C860081C88A /* BTBoundWebSocketDataProvider.swift */; };
+		0AA1DF4221D4A30F0081C88A /* BTBoundLocalDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3C21D498350081C88A /* BTBoundLocalDataProvider.swift */; };
+		0AA1DF4321D4A3100081C88A /* BTBoundLocalDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3C21D498350081C88A /* BTBoundLocalDataProvider.swift */; };
+		0AA1DF4421D4A3130081C88A /* BTBoundHTTPDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3E21D49C6A0081C88A /* BTBoundHTTPDataProvider.swift */; };
+		0AA1DF4521D4A3130081C88A /* BTBoundHTTPDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3E21D49C6A0081C88A /* BTBoundHTTPDataProvider.swift */; };
+		0AA1DF4621D4A3160081C88A /* BTBoundWebSocketDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF4021D49C860081C88A /* BTBoundWebSocketDataProvider.swift */; };
+		0AA1DF4721D4A3160081C88A /* BTBoundWebSocketDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF4021D49C860081C88A /* BTBoundWebSocketDataProvider.swift */; };
+		0AA1DF4821D4A31E0081C88A /* BTBoundDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3821D496A30081C88A /* BTBoundDataProviderProtocol.swift */; };
+		0AA1DF4921D4A31F0081C88A /* BTBoundDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3821D496A30081C88A /* BTBoundDataProviderProtocol.swift */; };
+		F335EA307837ABCFCDE064A5 /* Pods_bondsTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C92F436F46E24964DD852D3 /* Pods_bondsTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +66,15 @@
 		0AA1DF1C21D47F5E0081C88A /* bondsTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bondsTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA1DF2021D47F5E0081C88A /* bondsTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bondsTaskUITests.swift; sourceTree = "<group>"; };
 		0AA1DF2221D47F5E0081C88A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AA1DF3021D486B30081C88A /* BTBoundGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBoundGraphView.swift; sourceTree = "<group>"; };
+		0AA1DF3421D48A670081C88A /* BTBoundValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBoundValue.swift; sourceTree = "<group>"; };
+		0AA1DF3821D496A30081C88A /* BTBoundDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBoundDataProviderProtocol.swift; sourceTree = "<group>"; };
+		0AA1DF3C21D498350081C88A /* BTBoundLocalDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBoundLocalDataProvider.swift; sourceTree = "<group>"; };
+		0AA1DF3E21D49C6A0081C88A /* BTBoundHTTPDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBoundHTTPDataProvider.swift; sourceTree = "<group>"; };
+		0AA1DF4021D49C860081C88A /* BTBoundWebSocketDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBoundWebSocketDataProvider.swift; sourceTree = "<group>"; };
+		0C92F436F46E24964DD852D3 /* Pods_bondsTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bondsTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C43146DC2B4CDC6A559C3DE /* Pods-bondsTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bondsTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-bondsTask/Pods-bondsTask.release.xcconfig"; sourceTree = "<group>"; };
+		3D893B81023D5AA93D76EC80 /* Pods-bondsTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bondsTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bondsTask/Pods-bondsTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F335EA307837ABCFCDE064A5 /* Pods_bondsTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +110,8 @@
 				0AA1DF1421D47F5E0081C88A /* bondsTaskTests */,
 				0AA1DF1F21D47F5E0081C88A /* bondsTaskUITests */,
 				0AA1DEFE21D47F540081C88A /* Products */,
+				B920237C0596D88A89D36365 /* Pods */,
+				A6D8B9A103770AABCB0C9C11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +128,9 @@
 		0AA1DEFF21D47F540081C88A /* bondsTask */ = {
 			isa = PBXGroup;
 			children = (
+				0AA1DF2E21D485D50081C88A /* Core */,
+				0AA1DF2F21D485E20081C88A /* UI */,
 				0AA1DF0021D47F540081C88A /* AppDelegate.swift */,
-				0AA1DF0221D47F540081C88A /* ViewController.swift */,
-				0AA1DF0421D47F540081C88A /* Main.storyboard */,
 				0AA1DF0721D47F5D0081C88A /* Assets.xcassets */,
 				0AA1DF0921D47F5E0081C88A /* LaunchScreen.storyboard */,
 				0AA1DF0C21D47F5E0081C88A /* Info.plist */,
@@ -125,6 +156,45 @@
 			path = bondsTaskUITests;
 			sourceTree = "<group>";
 		};
+		0AA1DF2E21D485D50081C88A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0AA1DF3021D486B30081C88A /* BTBoundGraphView.swift */,
+				0AA1DF3821D496A30081C88A /* BTBoundDataProviderProtocol.swift */,
+				0AA1DF3C21D498350081C88A /* BTBoundLocalDataProvider.swift */,
+				0AA1DF3E21D49C6A0081C88A /* BTBoundHTTPDataProvider.swift */,
+				0AA1DF4021D49C860081C88A /* BTBoundWebSocketDataProvider.swift */,
+				0AA1DF3421D48A670081C88A /* BTBoundValue.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0AA1DF2F21D485E20081C88A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0AA1DF0221D47F540081C88A /* ViewController.swift */,
+				0AA1DF0421D47F540081C88A /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A6D8B9A103770AABCB0C9C11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C92F436F46E24964DD852D3 /* Pods_bondsTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B920237C0596D88A89D36365 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D893B81023D5AA93D76EC80 /* Pods-bondsTask.debug.xcconfig */,
+				3C43146DC2B4CDC6A559C3DE /* Pods-bondsTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AA1DF2521D47F5E0081C88A /* Build configuration list for PBXNativeTarget "bondsTask" */;
 			buildPhases = (
+				3F82088F7186DE5F6F0F328C /* [CP] Check Pods Manifest.lock */,
 				0AA1DEF921D47F540081C88A /* Sources */,
 				0AA1DEFA21D47F540081C88A /* Frameworks */,
 				0AA1DEFB21D47F540081C88A /* Resources */,
+				0608EC33BD8CF4D90339808C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,12 +323,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0608EC33BD8CF4D90339808C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-bondsTask/Pods-bondsTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftCharts/SwiftCharts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCharts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bondsTask/Pods-bondsTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F82088F7186DE5F6F0F328C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bondsTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0AA1DEF921D47F540081C88A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA1DF3921D496A30081C88A /* BTBoundDataProviderProtocol.swift in Sources */,
+				0AA1DF3121D486B30081C88A /* BTBoundGraphView.swift in Sources */,
+				0AA1DF3D21D498350081C88A /* BTBoundLocalDataProvider.swift in Sources */,
+				0AA1DF4121D49C860081C88A /* BTBoundWebSocketDataProvider.swift in Sources */,
+				0AA1DF3F21D49C6A0081C88A /* BTBoundHTTPDataProvider.swift in Sources */,
 				0AA1DF0321D47F540081C88A /* ViewController.swift in Sources */,
+				0AA1DF3521D48A670081C88A /* BTBoundValue.swift in Sources */,
 				0AA1DF0121D47F540081C88A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +386,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA1DF3221D486B30081C88A /* BTBoundGraphView.swift in Sources */,
+				0AA1DF3621D48A670081C88A /* BTBoundValue.swift in Sources */,
 				0AA1DF1621D47F5E0081C88A /* bondsTaskTests.swift in Sources */,
+				0AA1DF4221D4A30F0081C88A /* BTBoundLocalDataProvider.swift in Sources */,
+				0AA1DF4421D4A3130081C88A /* BTBoundHTTPDataProvider.swift in Sources */,
+				0AA1DF4621D4A3160081C88A /* BTBoundWebSocketDataProvider.swift in Sources */,
+				0AA1DF4821D4A31E0081C88A /* BTBoundDataProviderProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +400,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA1DF3321D486B30081C88A /* BTBoundGraphView.swift in Sources */,
+				0AA1DF3721D48A670081C88A /* BTBoundValue.swift in Sources */,
 				0AA1DF2121D47F5E0081C88A /* bondsTaskUITests.swift in Sources */,
+				0AA1DF4321D4A3100081C88A /* BTBoundLocalDataProvider.swift in Sources */,
+				0AA1DF4521D4A3130081C88A /* BTBoundHTTPDataProvider.swift in Sources */,
+				0AA1DF4721D4A3160081C88A /* BTBoundWebSocketDataProvider.swift in Sources */,
+				0AA1DF4921D4A31F0081C88A /* BTBoundDataProviderProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,11 +563,13 @@
 		};
 		0AA1DF2621D47F5E0081C88A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D893B81023D5AA93D76EC80 /* Pods-bondsTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K42YC37US;
 				INFOPLIST_FILE = bondsTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,17 +577,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockman.bondsTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		0AA1DF2721D47F5E0081C88A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C43146DC2B4CDC6A559C3DE /* Pods-bondsTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K42YC37US;
 				INFOPLIST_FILE = bondsTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,7 +597,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockman.bondsTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
