@@ -25,11 +25,16 @@ class ViewController: UIViewController {
     private func configureBoundGraph(){
         
         boundGraph.apiUrlPath = btAPIURLPath
-        //boundGraph.dataProviderType = .http
+        boundGraph.boundName = "isin"
+        boundGraph.dataProviderType = .http
         
         let currentDate = Date.init()
         let fromDate = currentDate.subtract(TimeChunk.init(seconds: 0, minutes: 0, hours: 0, days: 0, weeks: 0, months: 4, years: 0))
         boundGraph.viewDatePeriod = (from: fromDate, to: currentDate)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         boundGraph.reload()
     }

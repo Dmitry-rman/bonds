@@ -10,7 +10,7 @@ import Foundation
 
 class BTBoundWebSoketDataProvider: BTBoundDataProviderProtocol{
  
-    func getBounds(forName boundName: String, fromDate: Date, toDate: Date, completion: ([BTBoundValue]) -> (), fail: (NSError) -> ()) {
+    func getBounds(forName boundName: String, fromDate: Date, toDate: Date, completion: @escaping ([BTBoundValue]) -> (), fail: @escaping (Error) -> ()){
         #warning("Not implemented")
         fail(NSError(domain: "BTBoundError", code: 0, userInfo: nil))
     }

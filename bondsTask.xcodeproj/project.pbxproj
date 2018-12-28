@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A131E6921D5EA760018471D /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A131E6821D5EA760018471D /* StringExtensions.swift */; };
+		0A131E7521D5EB390018471D /* UIAlertController+Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A131E6E21D5EB390018471D /* UIAlertController+Show.swift */; };
 		0AA1DF0121D47F540081C88A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF0021D47F540081C88A /* AppDelegate.swift */; };
 		0AA1DF0321D47F540081C88A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF0221D47F540081C88A /* ViewController.swift */; };
 		0AA1DF0621D47F540081C88A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA1DF0421D47F540081C88A /* Main.storyboard */; };
@@ -21,17 +23,15 @@
 		0AA1DF3621D48A670081C88A /* BTBoundValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3421D48A670081C88A /* BTBoundValue.swift */; };
 		0AA1DF3721D48A670081C88A /* BTBoundValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3421D48A670081C88A /* BTBoundValue.swift */; };
 		0AA1DF3921D496A30081C88A /* BTBoundDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3821D496A30081C88A /* BTBoundDataProviderProtocol.swift */; };
-		0AA1DF3D21D498350081C88A /* BTBoundLocalDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3C21D498350081C88A /* BTBoundLocalDataProvider.swift */; };
 		0AA1DF3F21D49C6A0081C88A /* BTBoundHTTPDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3E21D49C6A0081C88A /* BTBoundHTTPDataProvider.swift */; };
 		0AA1DF4121D49C860081C88A /* BTBoundWebSocketDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF4021D49C860081C88A /* BTBoundWebSocketDataProvider.swift */; };
-		0AA1DF4221D4A30F0081C88A /* BTBoundLocalDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3C21D498350081C88A /* BTBoundLocalDataProvider.swift */; };
-		0AA1DF4321D4A3100081C88A /* BTBoundLocalDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3C21D498350081C88A /* BTBoundLocalDataProvider.swift */; };
 		0AA1DF4421D4A3130081C88A /* BTBoundHTTPDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3E21D49C6A0081C88A /* BTBoundHTTPDataProvider.swift */; };
 		0AA1DF4521D4A3130081C88A /* BTBoundHTTPDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3E21D49C6A0081C88A /* BTBoundHTTPDataProvider.swift */; };
 		0AA1DF4621D4A3160081C88A /* BTBoundWebSocketDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF4021D49C860081C88A /* BTBoundWebSocketDataProvider.swift */; };
 		0AA1DF4721D4A3160081C88A /* BTBoundWebSocketDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF4021D49C860081C88A /* BTBoundWebSocketDataProvider.swift */; };
 		0AA1DF4821D4A31E0081C88A /* BTBoundDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3821D496A30081C88A /* BTBoundDataProviderProtocol.swift */; };
 		0AA1DF4921D4A31F0081C88A /* BTBoundDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF3821D496A30081C88A /* BTBoundDataProviderProtocol.swift */; };
+		0AA1DF5521D5D3410081C88A /* bounds_isin.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AA1DF5421D5D3410081C88A /* bounds_isin.json */; };
 		F335EA307837ABCFCDE064A5 /* Pods_bondsTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C92F436F46E24964DD852D3 /* Pods_bondsTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A131E6821D5EA760018471D /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		0A131E6E21D5EB390018471D /* UIAlertController+Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Show.swift"; sourceTree = "<group>"; };
 		0AA1DEFD21D47F540081C88A /* bondsTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bondsTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA1DF0021D47F540081C88A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AA1DF0221D47F540081C88A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,9 +71,9 @@
 		0AA1DF3021D486B30081C88A /* BTBoundGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBoundGraphView.swift; sourceTree = "<group>"; };
 		0AA1DF3421D48A670081C88A /* BTBoundValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBoundValue.swift; sourceTree = "<group>"; };
 		0AA1DF3821D496A30081C88A /* BTBoundDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBoundDataProviderProtocol.swift; sourceTree = "<group>"; };
-		0AA1DF3C21D498350081C88A /* BTBoundLocalDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBoundLocalDataProvider.swift; sourceTree = "<group>"; };
 		0AA1DF3E21D49C6A0081C88A /* BTBoundHTTPDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBoundHTTPDataProvider.swift; sourceTree = "<group>"; };
 		0AA1DF4021D49C860081C88A /* BTBoundWebSocketDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBoundWebSocketDataProvider.swift; sourceTree = "<group>"; };
+		0AA1DF5421D5D3410081C88A /* bounds_isin.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bounds_isin.json; sourceTree = "<group>"; };
 		0C92F436F46E24964DD852D3 /* Pods_bondsTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bondsTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C43146DC2B4CDC6A559C3DE /* Pods-bondsTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bondsTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-bondsTask/Pods-bondsTask.release.xcconfig"; sourceTree = "<group>"; };
 		3D893B81023D5AA93D76EC80 /* Pods-bondsTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bondsTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bondsTask/Pods-bondsTask.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A131E6721D5EA5D0018471D /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				0A131E6E21D5EB390018471D /* UIAlertController+Show.swift */,
+				0A131E6821D5EA760018471D /* StringExtensions.swift */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
 		0AA1DEF421D47F540081C88A = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +139,7 @@
 		0AA1DEFF21D47F540081C88A /* bondsTask */ = {
 			isa = PBXGroup;
 			children = (
+				0AA1DF5321D5D3020081C88A /* Resources */,
 				0AA1DF2E21D485D50081C88A /* Core */,
 				0AA1DF2F21D485E20081C88A /* UI */,
 				0AA1DF0021D47F540081C88A /* AppDelegate.swift */,
@@ -161,10 +173,10 @@
 			children = (
 				0AA1DF3021D486B30081C88A /* BTBoundGraphView.swift */,
 				0AA1DF3821D496A30081C88A /* BTBoundDataProviderProtocol.swift */,
-				0AA1DF3C21D498350081C88A /* BTBoundLocalDataProvider.swift */,
 				0AA1DF3E21D49C6A0081C88A /* BTBoundHTTPDataProvider.swift */,
 				0AA1DF4021D49C860081C88A /* BTBoundWebSocketDataProvider.swift */,
 				0AA1DF3421D48A670081C88A /* BTBoundValue.swift */,
+				0A131E6721D5EA5D0018471D /* Vendors */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -176,6 +188,14 @@
 				0AA1DF0421D47F540081C88A /* Main.storyboard */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		0AA1DF5321D5D3020081C88A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0AA1DF5421D5D3410081C88A /* bounds_isin.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A6D8B9A103770AABCB0C9C11 /* Frameworks */ = {
@@ -301,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA1DF5521D5D3410081C88A /* bounds_isin.json in Resources */,
 				0AA1DF0B21D47F5E0081C88A /* LaunchScreen.storyboard in Resources */,
 				0AA1DF0821D47F5D0081C88A /* Assets.xcassets in Resources */,
 				0AA1DF0621D47F540081C88A /* Main.storyboard in Resources */,
@@ -332,12 +353,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-bondsTask/Pods-bondsTask-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/CodableAlamofire/CodableAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftCharts/SwiftCharts.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCharts.framework",
 			);
@@ -373,10 +398,11 @@
 			files = (
 				0AA1DF3921D496A30081C88A /* BTBoundDataProviderProtocol.swift in Sources */,
 				0AA1DF3121D486B30081C88A /* BTBoundGraphView.swift in Sources */,
-				0AA1DF3D21D498350081C88A /* BTBoundLocalDataProvider.swift in Sources */,
 				0AA1DF4121D49C860081C88A /* BTBoundWebSocketDataProvider.swift in Sources */,
 				0AA1DF3F21D49C6A0081C88A /* BTBoundHTTPDataProvider.swift in Sources */,
 				0AA1DF0321D47F540081C88A /* ViewController.swift in Sources */,
+				0A131E7521D5EB390018471D /* UIAlertController+Show.swift in Sources */,
+				0A131E6921D5EA760018471D /* StringExtensions.swift in Sources */,
 				0AA1DF3521D48A670081C88A /* BTBoundValue.swift in Sources */,
 				0AA1DF0121D47F540081C88A /* AppDelegate.swift in Sources */,
 			);
@@ -389,7 +415,6 @@
 				0AA1DF3221D486B30081C88A /* BTBoundGraphView.swift in Sources */,
 				0AA1DF3621D48A670081C88A /* BTBoundValue.swift in Sources */,
 				0AA1DF1621D47F5E0081C88A /* bondsTaskTests.swift in Sources */,
-				0AA1DF4221D4A30F0081C88A /* BTBoundLocalDataProvider.swift in Sources */,
 				0AA1DF4421D4A3130081C88A /* BTBoundHTTPDataProvider.swift in Sources */,
 				0AA1DF4621D4A3160081C88A /* BTBoundWebSocketDataProvider.swift in Sources */,
 				0AA1DF4821D4A31E0081C88A /* BTBoundDataProviderProtocol.swift in Sources */,
@@ -403,7 +428,6 @@
 				0AA1DF3321D486B30081C88A /* BTBoundGraphView.swift in Sources */,
 				0AA1DF3721D48A670081C88A /* BTBoundValue.swift in Sources */,
 				0AA1DF2121D47F5E0081C88A /* bondsTaskUITests.swift in Sources */,
-				0AA1DF4321D4A3100081C88A /* BTBoundLocalDataProvider.swift in Sources */,
 				0AA1DF4521D4A3130081C88A /* BTBoundHTTPDataProvider.swift in Sources */,
 				0AA1DF4721D4A3160081C88A /* BTBoundWebSocketDataProvider.swift in Sources */,
 				0AA1DF4921D4A31F0081C88A /* BTBoundDataProviderProtocol.swift in Sources */,

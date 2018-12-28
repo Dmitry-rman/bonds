@@ -37,10 +37,10 @@ class BTBoundGraphView: UIView {
         }
     }
     
-    @IBInspectable var boundName: String?{
-        didSet(newValue){
-            if newValue != nil {
-               print("set bound name " + newValue!)
+    var boundName: String?{
+        didSet{
+            if boundName != nil {
+               print("set bound name " + boundName!)
             }
         }
     }
@@ -54,6 +54,7 @@ class BTBoundGraphView: UIView {
     
     private var _dataProvider: BTBoundDataProviderProtocol?
     private var _busyIndicator: UIActivityIndicatorView?
+    private var _data = [BTBoundValue] ()
     
     //MARK: -
     
@@ -61,7 +62,6 @@ class BTBoundGraphView: UIView {
         super.awakeFromNib()
         
         setDataProvider()
-        boundName = ""
        
         let indicatorSize = 44.0
         _busyIndicator = UIActivityIndicatorView.init(frame: CGRect.init(origin: self.center,
@@ -76,12 +76,17 @@ class BTBoundGraphView: UIView {
     private func setDataProvider(){
         switch dataProviderType {
         case .http:
-            _dataProvider = BTBoundHTTPDataProvider()
+             if let apiPath = self.apiUrlPath {
+               _dataProvider = BTBoundHTTPDataProvider(endpointApiPath: apiPath)
+             }
+            break
         case .webSoket:
             _dataProvider = BTBoundWebSoketDataProvider()
+            break
         default:
-           _dataProvider = BTBoundLocalDataProvider()
-        }
+             _dataProvider = BTBoundTestDataProvider()
+            break
+        }  
     }
     
     func reload(){
@@ -100,16 +105,21 @@ class BTBoundGraphView: UIView {
                                          fromDate: fromDate,
                                          toDate: toDate,
                                          completion: { [weak self] (results) in
+                                            self?._data = results
                                             DispatchQueue.main.async {
                                                 self?._busyIndicator?.stopAnimating()
                                                 self?.updateUI()
                                             }
                                             
                     }, fail: { [weak self] (error) in
+                        print(error.localizedDescription)
                         DispatchQueue.main.async {
                             self?._busyIndicator?.stopAnimating()
+                            self?.showDialogController(title:  "Ошибка".localized,
+                                                      message: error.localizedDescription,
+                                                      cancel: nil,
+                                                      success: nil)
                         }
-                        print(error.localizedDescription)
                 })
             }
         }
@@ -119,6 +129,28 @@ class BTBoundGraphView: UIView {
     }
     
     private func updateUI(){
+        print("data: \(_data)")
+    }
+    
+    private func showDialogController(title: String,
+                                      message: String,
+                                      cancelTitle: String? = "Отмена".localized,
+                                      cancel: (()->())?,
+                                      succesTtitle: String? = "Ок".localized,
+                                      success: (()->())?){
         
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        if cancel != nil {
+            alertController.addAction(UIAlertAction(title: cancelTitle, style: .cancel) { (action: UIAlertAction) in
+                cancel?()
+            })
+        }
+        
+        alertController.addAction(UIAlertAction(title: succesTtitle, style: .default) { (action: UIAlertAction) in
+            success?()
+        })
+    
+        alertController.show(true)
     }
 }

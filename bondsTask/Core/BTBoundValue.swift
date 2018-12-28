@@ -9,7 +9,13 @@
 import Foundation
 
 struct BTBoundValue: Codable{
-    var yield: Double?
-    var price: Double?
-    var date: Date?
+    var yield: Double
+    var price: Double
+    var date: Date
+    
+    init(aYield: Double, aPrice: Double, aDate: Date) {
+        self.yield = aYield
+        self.price = aPrice
+        self.date = aDate
+    }
 }
