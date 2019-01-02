@@ -9,9 +9,9 @@
 import Foundation
 
 struct BTBoundValue: Codable{
+    var date: Date
     var yield: Double
     var price: Double
-    var date: Date
     
     init(aYield: Double, aPrice: Double, aDate: Date) {
         self.yield = aYield

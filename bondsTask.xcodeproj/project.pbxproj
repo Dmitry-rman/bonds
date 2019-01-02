@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A131E6921D5EA760018471D /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A131E6821D5EA760018471D /* StringExtensions.swift */; };
 		0A131E7521D5EB390018471D /* UIAlertController+Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A131E6E21D5EB390018471D /* UIAlertController+Show.swift */; };
+		0A131EAF21DC953C0018471D /* BTChartDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A131EAE21DC953C0018471D /* BTChartDefaults.swift */; };
 		0AA1DF0121D47F540081C88A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF0021D47F540081C88A /* AppDelegate.swift */; };
 		0AA1DF0321D47F540081C88A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF0221D47F540081C88A /* ViewController.swift */; };
 		0AA1DF0621D47F540081C88A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA1DF0421D47F540081C88A /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		0A131E6821D5EA760018471D /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		0A131E6E21D5EB390018471D /* UIAlertController+Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Show.swift"; sourceTree = "<group>"; };
+		0A131EAE21DC953C0018471D /* BTChartDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTChartDefaults.swift; sourceTree = "<group>"; };
 		0AA1DEFD21D47F540081C88A /* bondsTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bondsTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA1DF0021D47F540081C88A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AA1DF0221D47F540081C88A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				0AA1DF3E21D49C6A0081C88A /* BTBoundHTTPDataProvider.swift */,
 				0AA1DF4021D49C860081C88A /* BTBoundWebSocketDataProvider.swift */,
 				0AA1DF3421D48A670081C88A /* BTBoundValue.swift */,
+				0A131EAE21DC953C0018471D /* BTChartDefaults.swift */,
 				0A131E6721D5EA5D0018471D /* Vendors */,
 			);
 			path = Core;
@@ -396,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A131EAF21DC953C0018471D /* BTChartDefaults.swift in Sources */,
 				0AA1DF3921D496A30081C88A /* BTBoundDataProviderProtocol.swift in Sources */,
 				0AA1DF3121D486B30081C88A /* BTBoundGraphView.swift in Sources */,
 				0AA1DF4121D49C860081C88A /* BTBoundWebSocketDataProvider.swift in Sources */,
