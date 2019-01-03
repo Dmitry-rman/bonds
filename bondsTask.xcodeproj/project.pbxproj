@@ -10,8 +10,10 @@
 		0A131E6921D5EA760018471D /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A131E6821D5EA760018471D /* StringExtensions.swift */; };
 		0A131E7521D5EB390018471D /* UIAlertController+Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A131E6E21D5EB390018471D /* UIAlertController+Show.swift */; };
 		0A131EAF21DC953C0018471D /* BTChartDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A131EAE21DC953C0018471D /* BTChartDefaults.swift */; };
+		0A131EB121DDE2F00018471D /* UIVIewAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A131EB021DDE2F00018471D /* UIVIewAddition.swift */; };
+		0A131EB221DDE2F00018471D /* UIVIewAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A131EB021DDE2F00018471D /* UIVIewAddition.swift */; };
 		0AA1DF0121D47F540081C88A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF0021D47F540081C88A /* AppDelegate.swift */; };
-		0AA1DF0321D47F540081C88A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF0221D47F540081C88A /* ViewController.swift */; };
+		0AA1DF0321D47F540081C88A /* BTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA1DF0221D47F540081C88A /* BTViewController.swift */; };
 		0AA1DF0621D47F540081C88A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA1DF0421D47F540081C88A /* Main.storyboard */; };
 		0AA1DF0821D47F5D0081C88A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA1DF0721D47F5D0081C88A /* Assets.xcassets */; };
 		0AA1DF0B21D47F5E0081C88A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA1DF0921D47F5E0081C88A /* LaunchScreen.storyboard */; };
@@ -57,9 +59,10 @@
 		0A131E6821D5EA760018471D /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		0A131E6E21D5EB390018471D /* UIAlertController+Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Show.swift"; sourceTree = "<group>"; };
 		0A131EAE21DC953C0018471D /* BTChartDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTChartDefaults.swift; sourceTree = "<group>"; };
+		0A131EB021DDE2F00018471D /* UIVIewAddition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVIewAddition.swift; sourceTree = "<group>"; };
 		0AA1DEFD21D47F540081C88A /* bondsTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bondsTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA1DF0021D47F540081C88A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AA1DF0221D47F540081C88A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0AA1DF0221D47F540081C88A /* BTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTViewController.swift; sourceTree = "<group>"; };
 		0AA1DF0521D47F540081C88A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AA1DF0721D47F5D0081C88A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AA1DF0A21D47F5E0081C88A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				0A131E6E21D5EB390018471D /* UIAlertController+Show.swift */,
+				0A131EB021DDE2F00018471D /* UIVIewAddition.swift */,
 				0A131E6821D5EA760018471D /* StringExtensions.swift */,
 			);
 			path = Vendors;
@@ -187,7 +191,7 @@
 		0AA1DF2F21D485E20081C88A /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				0AA1DF0221D47F540081C88A /* ViewController.swift */,
+				0AA1DF0221D47F540081C88A /* BTViewController.swift */,
 				0AA1DF0421D47F540081C88A /* Main.storyboard */,
 			);
 			path = UI;
@@ -404,7 +408,8 @@
 				0AA1DF3121D486B30081C88A /* BTBoundGraphView.swift in Sources */,
 				0AA1DF4121D49C860081C88A /* BTBoundWebSocketDataProvider.swift in Sources */,
 				0AA1DF3F21D49C6A0081C88A /* BTBoundHTTPDataProvider.swift in Sources */,
-				0AA1DF0321D47F540081C88A /* ViewController.swift in Sources */,
+				0AA1DF0321D47F540081C88A /* BTViewController.swift in Sources */,
+				0A131EB121DDE2F00018471D /* UIVIewAddition.swift in Sources */,
 				0A131E7521D5EB390018471D /* UIAlertController+Show.swift in Sources */,
 				0A131E6921D5EA760018471D /* StringExtensions.swift in Sources */,
 				0AA1DF3521D48A670081C88A /* BTBoundValue.swift in Sources */,
@@ -431,6 +436,7 @@
 			files = (
 				0AA1DF3321D486B30081C88A /* BTBoundGraphView.swift in Sources */,
 				0AA1DF3721D48A670081C88A /* BTBoundValue.swift in Sources */,
+				0A131EB221DDE2F00018471D /* UIVIewAddition.swift in Sources */,
 				0AA1DF2121D47F5E0081C88A /* bondsTaskUITests.swift in Sources */,
 				0AA1DF4521D4A3130081C88A /* BTBoundHTTPDataProvider.swift in Sources */,
 				0AA1DF4721D4A3160081C88A /* BTBoundWebSocketDataProvider.swift in Sources */,

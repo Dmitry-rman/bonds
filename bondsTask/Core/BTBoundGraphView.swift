@@ -10,9 +10,9 @@ import UIKit
 import SwiftCharts
 import DateToolsSwift
 
-enum BTBoundDataType: String {
-    case Yield = "yield"
-    case Price = "price"
+enum BTBoundDataType: String, CaseIterable {
+    case Yield = "Yield"
+    case Price = "Price"
 }
 
 enum BTBoundDataProviderType: Int{
@@ -28,22 +28,32 @@ class Env {
     }
 }
 
-class BTBoundGraphView: UIView {
+@objc protocol BTBoundGraphViewDelegate: class {
+    func graphDidChangedDataType()
+}
+
+public class BTBoundGraphView: UIView {
+    
+    @IBOutlet weak var delegate: BTBoundGraphViewDelegate?
     
     var viewDatePeriod: (from: Date, to: Date)?{
         didSet{
-            reload(updateData: false)
+            reload(updateData: true)
         }
     }
-    var dataType: BTBoundDataType = .Yield
     
-    @available(*, unavailable, message: "This property is reserved for Interface Builder. Use 'dataType' instead.")
-    @IBInspectable var dataTypeName: String? {
-        willSet {
-            if let newDataType = BTBoundDataType(rawValue: newValue?.lowercased() ?? "") {
-                dataType = newDataType
-            }
+    var allDataFields: [String]{
+        return BTBoundDataType.allCases.map {$0.rawValue}
+    }
+    var dataType: BTBoundDataType = .Price{
+        didSet{
+            reload(updateData: false)
+            delegate?.graphDidChangedDataType()
         }
+    }
+    
+     public var dataTypeName: String? {
+        return self.dataType.rawValue
     }
     
     @IBInspectable var lineWidth: Float = 1.5
@@ -69,14 +79,26 @@ class BTBoundGraphView: UIView {
     private var _busyIndicator: UIActivityIndicatorView?
     private var _data = [BTBoundValue] ()
     private var _chart: Chart?
+    private var _chartFrame: CGRect {
+        return CGRect.init(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height)
+    }
     
     //MARK: -
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
         setDataProvider()
-        
+        initUI()
+    }
+    
+    public  func setDatePeriod(datePeriod: TimeChunk, toDate date: Date){
+        let toDate = Date()
+        let fromDate = toDate.subtract( datePeriod)
+        self.viewDatePeriod = (from: fromDate, to: toDate)
+    }
+    
+    private func initUI(){
         let indicatorSize = 44.0
         _busyIndicator = UIActivityIndicatorView.init(frame: CGRect.init(origin: self.center,
                                                                          size: CGSize.init(width: indicatorSize,
@@ -84,25 +106,33 @@ class BTBoundGraphView: UIView {
         _busyIndicator?.center = self.center
         _busyIndicator?.style = .gray
         _busyIndicator?.hidesWhenStopped = true
-         self.addSubview(_busyIndicator!)
+        self.addSubview(_busyIndicator!)
     }
     
     private func initChart() -> Chart?{
         
-        if _data.count == 0 {
+        if _data.count == 0 || viewDatePeriod == nil{
             return nil
         }
         
         let displayFormatter = DateFormatter()
         displayFormatter.dateFormat = "dd.MM"
         
-        let dataValues = self._data.map {($0.date, $0.yield)}
+        var dataValues = [(Date, Double)]()
+        
+        switch dataType {
+        case .Yield:
+            dataValues = self._data.map {($0.date, $0.yield)}
+        default:
+            dataValues = self._data.map {($0.date, $0.price)}
+        }
+        
         let chartPoints: [ChartPoint] = dataValues.map {ChartPoint(x:ChartAxisValueDate.init(date: $0.0, formatter: displayFormatter), y:  ChartAxisValueDouble($0.1))
         }
 
         let labelSettings = ChartLabelSettings(font: BTChartDefaults.labelFont)
         
-        var yMin =  dataValues.map {$0.1}.min() ?? 0
+        let yMin =  dataValues.map {$0.1}.min() ?? 0
         let yMax =  dataValues.map {$0.1}.max() ?? 0
         let interval = yMax - yMin
         let generator = ChartAxisGeneratorMultiplier(round((yMax - yMin)/10))
@@ -116,8 +146,8 @@ class BTBoundGraphView: UIView {
                                                           maxTextSize: 12)
         let xLabelGeneratorDate = ChartAxisLabelsGeneratorDate(labelSettings: labelSettings,
                                                                formatter: displayFormatter)
-        let firstDate =  dataValues.map {$0.0}.min()!
-        let lastDate = dataValues.map {$0.0}.max()!
+        let firstDate =  self.viewDatePeriod!.from//dataValues.map {$0.0}.min()!
+        let lastDate = self.viewDatePeriod!.to//dataValues.map {$0.0}.max()!
         let period = lastDate.timeIntervalSince1970 - firstDate.timeIntervalSince1970
         let xModel = ChartAxisModel(firstModelValue: firstDate.timeIntervalSince1970 - period/10,
                                     lastModelValue: lastDate.timeIntervalSince1970 + period/10,
@@ -129,7 +159,7 @@ class BTBoundGraphView: UIView {
                                     axisTitleLabels: [ChartAxisLabel(text: self.boundName?.uppercased() ?? "", settings: labelSettings.defaultVertical())],
                                     axisValuesGenerator: generator, labelsGenerator: labelsGenerator)
         
-        let chartFrame = BTChartDefaults.chartFrame(self.bounds)
+        let chartFrame = self._chartFrame
         
         let chartSettings = BTChartDefaults.iPhoneChartSettings
         
@@ -192,7 +222,7 @@ class BTBoundGraphView: UIView {
         }  
     }
     
-    func reload(){
+    public func reload(){
         reload(updateData: true)
     }
     
