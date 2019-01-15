@@ -15,29 +15,26 @@ enum BTPeriodControlType: Int{
     case W1, M1, M3, M6, Y1, Y2
     
     var timeChunk: TimeChunk{
-        var timePeriod = TimeChunk.init(seconds: 0, minutes: 0, hours: 0, days: 0, weeks:1, months: 0, years: 0)
-        
+ 
         switch self {
         case .M1:
-            timePeriod = TimeChunk.init(seconds: 0, minutes: 0, hours: 0, days: 0, weeks:0, months: 1, years: 0)
-            break
+            return TimeChunk.init(seconds: 0, minutes: 0, hours: 0, days: 0, weeks:0, months: 1, years: 0)
+
         case .M3:
-            timePeriod = TimeChunk.init(seconds: 0, minutes: 0, hours: 0, days: 0, weeks:0, months: 3, years: 0)
-            break
+            return TimeChunk.init(seconds: 0, minutes: 0, hours: 0, days: 0, weeks:0, months: 3, years: 0)
+
         case .M6:
-            timePeriod = TimeChunk.init(seconds: 0, minutes: 0, hours: 0, days: 0, weeks:0, months: 6, years: 0)
-            break
+            return TimeChunk.init(seconds: 0, minutes: 0, hours: 0, days: 0, weeks:0, months: 6, years: 0)
+     
         case .Y1:
-            timePeriod = TimeChunk.init(seconds: 0, minutes: 0, hours: 0, days: 0, weeks:0, months: 0, years: 1)
-            break
+            return TimeChunk.init(seconds: 0, minutes: 0, hours: 0, days: 0, weeks:0, months: 0, years: 1)
+        
         case .Y2:
-            timePeriod = TimeChunk.init(seconds: 0, minutes: 0, hours: 0, days: 0, weeks:0, months: 0, years: 2)
-            break
+            return TimeChunk.init(seconds: 0, minutes: 0, hours: 0, days: 0, weeks:0, months: 0, years: 2)
+        
         default:
-            timePeriod = TimeChunk.init(seconds: 0, minutes: 0, hours: 0, days: 0, weeks:1, months: 0, years: 0)
-            break
+            return TimeChunk.init(seconds: 0, minutes: 0, hours: 0, days: 0, weeks:1, months: 0, years: 0)
         }
-        return timePeriod
     }
 }
 
